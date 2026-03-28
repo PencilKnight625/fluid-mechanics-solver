@@ -16,5 +16,8 @@ A Flask-based web application for solving fluid mechanics problems.
 
 ## How to Run
 
-pip install -r requirements.txt
-python app.py
+1. Install dependencies:
+   pip install -r requirements.txt
+
+2. Run the application:
+   python app.py
