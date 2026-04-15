@@ -1,9 +1,8 @@
+from utils.converters import UnitConverter
 def calculate_reynolds(density, velocity, diameter, viscosity):
     """
     Calculate Reynolds number.
     Re = (rho * v * D) / mu
-
-    Returns: (reynolds_number: float, flow_type: str)
     """
     reynolds = (density * velocity * diameter) / viscosity
 
@@ -14,4 +13,4 @@ def calculate_reynolds(density, velocity, diameter, viscosity):
     else:
         flow_type = "Turbulent"
 
-    return round(reynolds, 4), flow_type
+    return {"reynolds": round(re, 4), "type": flow_type}
